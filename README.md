@@ -1,4 +1,4 @@
-url-report
+url-report [![Build Status](https://travis-ci.org/callumlocke/url-report.png?branch=v0.0.1)](https://travis-ci.org/callumlocke/url-report)
 ==========
 
 Node library to generate a health report for a URL.
@@ -19,9 +19,9 @@ urlReport.load('http://www.wikipedia.org/', function (report) {
 The report
 ----------
 
-The object passed to your callback has these properties:
+A report object has these properties:
 
-* `loadStatus` – whether the page loaded (either 'success' or 'fail')
+* `loadStatus` – whether the page loaded (`"success"` or `"fail"`)
 * `javascriptErrors` – an array of JavaScript errors
 * `consoleMessages` – an array of messages from `console.log`, `console.dir` etc.
 * `resources` – an array of objects detailing all the resources requested (including failed ones)
@@ -32,3 +32,4 @@ To do
 -----
 
 * Add performance stats (server response time, page load time, bandwidth usage)
+* Option to wait for longer after page load before returning (to wait for more JS errors)
