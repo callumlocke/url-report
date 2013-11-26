@@ -1,4 +1,4 @@
-url-report [![Build Status](https://travis-ci.org/callumlocke/url-report.png?branch=v0.0.1)](https://travis-ci.org/callumlocke/url-report)
+url-report [![Build Status](https://travis-ci.org/callumlocke/url-report.png?branch=master)](https://travis-ci.org/callumlocke/url-report)
 ==========
 
 Node library to generate a health report for a URL.
