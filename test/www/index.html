@@ -1,0 +1,22 @@
+<img src="squirrel.jpg">
+<img src="santa.jpg">
+
+<script>
+  console.log('first log');
+
+  window.onload = function () {
+    console.log('window just loaded');
+    console.dir({key: 'value'});
+
+    setTimeout(function () {
+      console.log('this is slightly after load');
+      fubar();
+    }, 100);
+
+    throw new Error('oh no');
+  };
+
+  (new Image).src = 'freddy.jpg';
+  (new Image).src = 'god.jpg';
+
+</script>
