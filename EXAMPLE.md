@@ -4,7 +4,7 @@ Notes...
 
 * `loadStatus` will always be `"success"` if the page loaded – even if some resources failed.
 * the objects in `resources` and `resourceErrors` are currently in the format that PhantomJS reports them, which is a bit verbose
-* `resources` contains info on all requested resources (images, scripts, etc), **including** failed downloads
+* `resources` contains info on **all** requested resources (images, scripts, etc) – including ones that failed to download
   * the `resourceErrors` array doesn't really give you any further info about the failed ones – it's mainly intended as a quick way to verify there were no download errors (`var allGood = !report.resourceErrors.length`)
 
 
