@@ -8,7 +8,7 @@ Usage
 -----
 
 ```javascript
-urlReport = require('url-report');
+var urlReport = require('url-report');
 
 urlReport.load('http://www.wikipedia.org/', function (report) {
   console.log(report);
