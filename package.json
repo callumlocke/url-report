@@ -1,6 +1,6 @@
 {
   "name": "url-report",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generate a health report for a URL",
   "main": "index.js",
   "directories": {
