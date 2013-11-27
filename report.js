@@ -41,10 +41,16 @@ page.onError = function (message, trace) {
 };
 
 page.onConsoleMessage = function (message, lineNumber, sourceId) {
+  /*
+    "Note: line number and source identifier are not used yet, at least in phantomJS <= 1.8.1. You receive undefined values."
+
+    https://github.com/ariya/phantomjs/wiki/API-Reference-WebPage#onconsolemessage
+  */
+
   report.consoleMessages.push({
-    message: message,
-    lineNumber: lineNumber,
-    sourceId: sourceId
+    message: message//,
+    // lineNumber: lineNumber,
+    // sourceId: sourceId
   });
 };
 
