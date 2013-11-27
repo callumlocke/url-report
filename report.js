@@ -10,6 +10,7 @@ var sys = require("system"),
     page = require("webpage").create(),
     url = sys.args[1],
     report = {
+      loadStatus: 'fail',
       resources: [],
       resourceErrors: [],
       javascriptErrors: [],
